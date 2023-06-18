@@ -8,7 +8,7 @@ Playing with different web3 concepts.
 Write a simple smart contract in Solidity that performs basic arithmetic operations.
 
 ### 2: Contract Deployment
-Deploy a smart contract to a testnet (e.g., Ropsten, Rinkeby) using Remix or Truffle.
+Deploy a smart contract to Sepolia using Remix or Truffle.
 
 ### 3: Smart Contract Interactions
 Build a frontend interface to interact with a deployed smart contract using web3.js or ethers.js.

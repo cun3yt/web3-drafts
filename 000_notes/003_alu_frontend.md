@@ -2,6 +2,8 @@
 
 It is important to specify the artifact target directory under the directory `src/` in hardhat config. Look at the QuickNode Article below, the section about `module.exports` of "hardhat.config.js".
 
+Run the application: `$ npm start`
+
 Other important notes:
 
 1. In order to make Metamask's ethereum object available for the React app, we need to have "global.d.ts" file to expose it

@@ -21,3 +21,7 @@ SEPOLIA_PK=<meta mask PK import>
 SEPOLIA_CONTRACT_ADDRESS=<deployed contract address>
 SEPOLIA_NODE_URL=<full URL of the node>
 ```
+
+## Reference Articles
+
+1. https://soliditytips.com/articles/send-eth-web3-app-smart-contract/

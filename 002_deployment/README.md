@@ -13,6 +13,8 @@ One lesson: Do not mix different providers, in this case: hardhat's ethers and w
 
 ## Environment Setup
 
+To use environment file, install "dotenv" package: `npm i dotenv`.
+
 You will need to create ".env" file with the following variables:
 
 ```

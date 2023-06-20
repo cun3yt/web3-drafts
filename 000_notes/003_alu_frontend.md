@@ -1,5 +1,7 @@
 # Frontend for ALU Contract
 
+A React app can be created with Typescript: `npx create-react-app alu-fe --template typescript`.
+
 It is important to specify the artifact target directory under the directory `src/` in hardhat config. Look at the QuickNode Article below, the section about `module.exports` of "hardhat.config.js".
 
 Run the application: `$ npm start`

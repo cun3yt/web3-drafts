@@ -103,5 +103,15 @@ describe("SbgToken", function () {
             await sbgToken.approve(otherAccount.address, 30);
             await expect(sbgToken.connect(otherAccount).transferFrom(owner.address, thirdAccount.address, 20)).to.be.revertedWith("Insufficient balance");
         });
+
+        it("Should have the right name", async function () {
+            const { sbgToken } = await deploymentFixture();
+            expect(await sbgToken.name()).to.equal("SurfBorgCoin");
+        });
+
+        it("Should have the right symbol", async function () {
+            const { sbgToken } = await deploymentFixture();
+            expect(await sbgToken.symbol()).to.equal("SBG");
+        });
     });
 });

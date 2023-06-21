@@ -64,24 +64,20 @@ contract SbgToken is IERC20 {
     }
 
     function transferFrom(address from, address to, uint256 amount) external returns (bool) {
-        bool success1;
-        bool success2;
-        bool success3;
+        bool success;
         uint256 newAmount;
-        uint256 newAmount2;
-        uint256 newAmount3;
         
-        (success1, newAmount) = _allowances[from][msg.sender].trySub(amount);
-        require(success1, "Insufficient allowance");
+        (success, newAmount) = _allowances[from][msg.sender].trySub(amount);
+        require(success, "Insufficient allowance");
         _allowances[from][msg.sender] = newAmount;
 
-        (success2, newAmount2) = _balances[from].trySub(amount);
-        require(success2, "Insufficient balance");
-        _balances[from] = newAmount2;
+        (success, newAmount) = _balances[from].trySub(amount);
+        require(success, "Insufficient balance");
+        _balances[from] = newAmount;
         
-        (success3, newAmount3) = _balances[to].tryAdd(amount);
-        require(success3, "Overflow error");
-        _balances[to] = newAmount3;
+        (success, newAmount) = _balances[to].tryAdd(amount);
+        require(success, "Overflow error");
+        _balances[to] = newAmount;
 
         emit Transfer(from, to, amount);
 

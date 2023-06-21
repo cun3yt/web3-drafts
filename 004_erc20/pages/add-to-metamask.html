@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<div>
+    This file is to suggest adding the SBG token to the MetaMask wallet. 
+</div>
+<div>
+    ps. In order to run this file, you will need to start a web server. Example: python3 -m http.server 8000
+</div>
+
+<script>
+    async function main() {
+        const tokenAddress = '0x6C40948215Cf406AABBD0285EAF8a7a1246879D1';
+        const tokenSymbol = 'SBG';
+        const tokenDecimals = 1;
+        const tokenImage = 'https://lime-yappy-landfowl-433.mypinata.cloud/ipfs/QmYDg6XSgYLUgKimjcU9nPNVRkyJDHvHbAzqUtb4ojcri1';
+
+        try {
+            // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+            const wasAdded = await window.ethereum.request({
+                method: 'wallet_watchAsset',
+                params: {
+                type: 'ERC20', // Initially only supports ERC20, but eventually more!
+                options: {
+                    address: tokenAddress, // The address that the token is at.
+                    symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+                    decimals: tokenDecimals, // The number of decimals in the token
+                    image: tokenImage, // A string url of the token logo
+                },
+                },
+            });
+
+            if (wasAdded) {
+                console.log('Thanks for your interest!');
+            } else {
+                console.log('Your loss!');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    main().catch(console.error);
+</script>
+</body>
+</html>

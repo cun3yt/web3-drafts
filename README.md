@@ -78,6 +78,7 @@ Develop a stablecoin contract using frameworks like OpenZeppelin and understand 
 
 ### 25: Off-Chain Data Storage
 Explore off-chain data storage solutions like The Graph or Ceramic Network and integrate them into your DApp.
+Add a bonus here: Build with [Tableland](https://tableland.xyz), a decentralized database for Ethereum, and [Spheron](https://spheron.network/), a decentralized computing infra.
 
 ### 26: Wallet Development
 Build a basic Web3 wallet that allows users to manage multiple accounts, sign transactions, and interact with smart contracts.

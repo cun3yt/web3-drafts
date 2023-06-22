@@ -25,6 +25,8 @@ Develop a multi-signature wallet contract that requires multiple signers to appr
 ### 7: DApp Development
 Build a decentralized application (DApp) using a frontend framework like React and integrate it with a smart contract.
 
+Bonus: Use [Foundry](https://getfoundry.sh/) instead of Hardhat.
+
 ### 8: Ethereum EVM Alternatives
 Explore other EVM-compatible blockchains like Binance Smart Chain (BSC) or Avalanche and compare their development environments.
 

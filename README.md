@@ -51,6 +51,8 @@ Create an ERC-721 or ERC-1155 smart contract for non-fungible tokens and build a
 ### 15: IPFS Integration
 Learn how to store files and metadata on the InterPlanetary File System (IPFS) and link them to your smart contracts.
 
+Bonus: Use Ceramic Streams & Lit
+
 ### 16: Governance Tokens
 Develop a basic governance token using frameworks like OpenZeppelin and experiment with voting mechanisms.
 
@@ -306,3 +308,7 @@ Dive deeper into Layer 2 development by building more complex applications or ex
 
 ### 100: Capstone Project
 Develop a capstone project that combines various Web3 concepts and technologies you have learned throughout the challenge. This can be a DApp, protocol, or innovative application.
+
+### 101: EVM
+
+Play with EVM: `pv-evm` is a good example.
